@@ -1,0 +1,108 @@
+$gutter: 30px;
+
+// Colors
+$bg-color: #101727;
+
+
+.sidebar {
+    position: fixed;
+    background: transparent;
+    right: 0;
+    z-index: 111111;
+    height: 100%;
+    width: 100px;
+    transition: width 400ms;
+    transition: width 400ms;
+    border-left: 1px solid #ffffff94;
+
+ 
+    ul{
+        margin: 170px 0 0 0;
+        padding: 0 0 0 $gutter;
+
+        li {
+            list-style-type: none;
+
+            &:not(:last-child) {
+                padding-bottom: 64px;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                span{
+                    display: none;
+                    color: white;
+
+                    &:first-child {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-family: 'Montserrat';
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.16em;
+                    }
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &:hover {
+        transform: 400ms all;
+        width: 336px;
+    }
+}
+
+footer {
+    background: $bg-color;
+    padding-top: 46px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                padding-bottom: $gutter / 3;
+
+                a {
+                    text-decoration: none;
+                    font-family: 'FiraGO';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    align-items: center;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .copy {
+        width: 100%;
+        text-align: center;
+        padding-bottom: $gutter;
+        font-family: 'FiraGO';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+}

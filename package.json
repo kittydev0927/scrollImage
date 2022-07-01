@@ -1,0 +1,14 @@
+{
+  "name": "maxinit.com-alliance",
+  "version": "1.0.0",
+  "description": "Project for aliane from maxinit.com",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o assets/css"
+  },
+  "author": "Giorgi Romanadze",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
